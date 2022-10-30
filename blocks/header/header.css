@@ -1,13 +1,16 @@
 .header {
-  min-height: 500px;
+  min-height: 600px;
   background-image: linear-gradient(
       rgba(255, 255, 255) 20%,
-      rgba(255, 255, 255, 0.538),
-      rgba(194, 112, 103, 0.4)
+      rgba(255, 255, 255, 0.5),
+      rgba(194, 112, 103, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255)
     ),
     url(../../images/background/back-header.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 30px;
   box-sizing: border-box;
+  position: relative;
 }
