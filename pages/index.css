@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;700&display=swap");
+@import url(../vendor/variables.css);
+
+@import url(../blocks/root/root.css);
+
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/logo/logo__subtitle.css);
+@import url(../blocks/logo//logo__title.css);
+@import url(../blocks/logo//logo__img.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/header__logo.css);
+@import url(../blocks/header/header__links.css);
+@import url(../blocks/header/header__link.css);
+@import url(../blocks/header/header__text.css);

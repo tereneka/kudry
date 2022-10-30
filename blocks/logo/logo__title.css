@@ -1,0 +1,10 @@
+.logo__title {
+  text-transform: uppercase;
+  font-family: "Edu QLD Beginner", cursive;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 10px;
+  margin: 0 auto;
+}

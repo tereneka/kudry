@@ -1,4 +1,5 @@
 :root {
-  --main-back: rgb(42, 44, 47);
-  --main-text: rgb(255, 255, 255);
+  --main-back: rgb(250, 250, 250);
+  --main-text: rgb(0, 0, 0);
+  --accent-warning: rgba(194, 112, 103);
 }

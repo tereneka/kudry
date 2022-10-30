@@ -1,0 +1,9 @@
+.header__text {
+  width: max-content;
+  margin: 100px auto 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}

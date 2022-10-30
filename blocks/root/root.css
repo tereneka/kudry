@@ -1,0 +1,11 @@
+.root {
+  font-family: "Source Code Pro", monospace;
+  max-width: 1440px;
+  background-color: var(--main-back);
+  color: var(--main-text);
+  box-sizing: border-box;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
