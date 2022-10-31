@@ -1,7 +1,19 @@
 .header__links {
   margin: 15px auto 0;
-  padding-left: 0;
+  padding: 0 15px;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-height: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  .header__links {
+    justify-content: space-around;
+  }
 }

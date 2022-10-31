@@ -1,5 +1,5 @@
 .header {
-  min-height: 600px;
+  min-height: 500px;
   /* background-image: linear-gradient(
       rgba(255, 255, 255) 20%,
       rgba(255, 255, 255, 0.5),
@@ -8,15 +8,32 @@
       rgba(255, 255, 255)
     ),
     url(../../images/background/back-header.jpg); */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(255, 255, 255) 20%,
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255) 95%
     ),
     url(../../images/background/back-header.jpg);
   background-size: cover;
-  background-position: center;
-  padding-top: 30px;
+  background-position: center; */
+  padding-top: 15px;
   box-sizing: border-box;
   position: relative;
+}
+
+.header::before {
+  content: "";
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255) 15%,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255) 95%
+    ),
+    url(../../images/background/back-header.jpg);
+  background-size: cover;
+  background-position: center;
 }
