@@ -1,0 +1,13 @@
+.photo__item {
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+  box-shadow: 0 0 5px 5px var(--accent-soft), 0 0 10px 10px var(--accent-bright);
+}
+
+@media screen and (min-width: 900px) {
+  .photo__item {
+    height: 20vw;
+    max-height: 280px;
+  }
+}
