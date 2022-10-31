@@ -5,6 +5,7 @@
 @import url(../vendor/variables.css);
 
 @import url(../blocks/root/root.css);
+@import url(../blocks/root/root__separator.css);
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/logo__subtitle.css);
@@ -16,3 +17,11 @@
 @import url(../blocks/header/header__links.css);
 @import url(../blocks/header/header__link.css);
 @import url(../blocks/header/header__text.css);
+
+@import url(../blocks/price/price.css);
+@import url(../blocks/price/price__title.css);
+@import url(../blocks/price/price__table.css);
+@import url(../blocks/price/price__table-caption.css);
+@import url(../blocks/price/__row/price__row.css);
+@import url(../blocks/price/__row//price__row_underlined.css);
+@import url(../blocks/price/price__cell.css);

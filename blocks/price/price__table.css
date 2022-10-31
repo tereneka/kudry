@@ -1,0 +1,17 @@
+.price__table {
+  width: 90%;
+  margin-left: 8%;
+}
+
+@media screen and (min-width: 700px) {
+  .price__table {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .price__table {
+    width: 60%;
+  }
+}

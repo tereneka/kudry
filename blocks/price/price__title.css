@@ -1,0 +1,23 @@
+.price__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1;
+  width: max-content;
+  margin: 0 0 -30px 2%;
+  position: sticky;
+  top: 15px;
+}
+
+@media screen and (min-width: 700px) {
+  .price__title {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .price__title {
+    margin-left: 10%;
+  }
+}

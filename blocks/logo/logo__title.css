@@ -1,6 +1,5 @@
 .logo__title {
   text-transform: uppercase;
-  /* font-family: "Edu QLD Beginner", cursive; */
   font-size: 34px;
   font-weight: 900;
   font-style: normal;
@@ -38,6 +37,8 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.logo:hover .logo__title {
-  background-position: 0;
+@media screen and (min-width: 900px) {
+  .logo:hover .logo__title {
+    background-position: 0;
+  }
 }
