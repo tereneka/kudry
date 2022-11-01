@@ -38,3 +38,8 @@
 @import url(../blocks/cards/cards__item-list.css);
 @import url(../blocks/cards/cards__item-list-el.css);
 @import url(../blocks/cards/cards__wrapper.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/footer__contacts.css);
+@import url(../blocks/footer/footer__contacts-link.css);
+@import url(../blocks/footer/footer__time.css);
