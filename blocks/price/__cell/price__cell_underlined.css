@@ -1,8 +1,12 @@
-.price__row_underlined {
+.price__cell_underlined {
+  padding-bottom: 20px;
+}
+
+tr:has(> .price__cell_underlined) {
   position: relative;
 }
 
-.price__row_underlined::after {
+.price__cell_underlined::after {
   content: "";
   width: 100%;
   height: 4px;
