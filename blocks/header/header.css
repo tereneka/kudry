@@ -20,4 +20,5 @@
     url(../../images/background/back-header.jpg);
   background-size: cover;
   background-position: center;
+  z-index: -1;
 }
