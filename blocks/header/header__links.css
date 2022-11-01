@@ -8,8 +8,13 @@
   position: relative;
   z-index: 1;
   overflow-x: auto;
-  overflow-y: hidden;
   min-height: 100px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.header__links::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (min-width: 600px) {

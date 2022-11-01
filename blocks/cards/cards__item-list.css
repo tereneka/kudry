@@ -1,0 +1,5 @@
+.cards__item-list {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}

@@ -23,10 +23,10 @@
     </a>
     <nav>
       <ul class="header__links">
-        <li><a class="header__link" href="#">цены</a></li>
-        <li><a class="header__link" href="#">работы</a></li>
-        <li><a class="header__link" href="#">интерьер</a></li>
-        <li><a class="header__link" href="#">команда</a></li>
+        <li><a class="header__link" href="#price">цены</a></li>
+        <li><a class="header__link" href="#works">работы</a></li>
+        <li><a class="header__link" href="#interior">интерьер</a></li>
+        <li><a class="header__link" href="#team">команда</a></li>
         <li><a class="header__link" href="#">контакты</a></li>
       </ul>
     </nav>
@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <section class="price">
+    <section class="price" id="price">
       <h3 class="section-title">ц<br>е<br>н<br>ы</h3>
       <table class="price__table">
         <caption class="price__table-caption">Парикмахерские услуги</caption>
@@ -214,7 +214,7 @@
       </table>
     </section>
 
-    <section class="photo">
+    <section class="photo" id="works">
       <h3 class="section-title">р<br>а<br>б<br>о<br>т<br>ы</h3>
       <div class="photo__grid">
         <img class="photo__item" src="./images/works/IMG-20221030-WA0011.jpg" alt="наши работы">
@@ -228,7 +228,7 @@
       </div>
     </section>
 
-    <section class="photo">
+    <section class="photo" id="interior">
       <h3 class="section-title">и<br>н<br>т<br>е<br>р<br>ь<br>е<br>р</h3>
       <div class="photo__grid">
         <img class="photo__item" src="./images/interior/int1.jpg" alt="наш интерьер">
@@ -239,6 +239,44 @@
         <img class="photo__item" src="./images/interior/int6.jpg" alt="наш интерьер">
         <img class="photo__item" src="./images/interior/int7.jpg" alt="наш интерьер">
         <img class="photo__item" src="./images/interior/int8.jpg" alt="наш интерьер">
+      </div>
+    </section>
+
+    <section class="cards" id="team">
+      <h3 class="section-title">к<br>о<br>м<br>а<br>н<br>д<br>а</h3>
+      <div class="cards__wrapper">
+        <div class="cards__item">
+          <img class="cards__item-img" src="./images/team/master.jpg" alt="фото мастера">
+          <h4 class="cards__item-title">Улька-козюлька</h4>
+          <ul class="cards__item-list">
+            <li class="cards__item-list-el">парикмахер</li>
+            <li class="cards__item-list-el">cтаж работы 3 года</li>
+          </ul>
+        </div>
+        <div class="cards__item">
+          <img class="cards__item-img" src="./images/team/master.jpg" alt="фото мастера">
+          <h4 class="cards__item-title">Светлана</h4>
+          <ul class="cards__item-list">
+            <li class="cards__item-list-el">парикмахер</li>
+            <li class="cards__item-list-el">cтаж работы 3 года</li>
+          </ul>
+        </div>
+        <div class="cards__item">
+          <img class="cards__item-img" src="./images/team/master.jpg" alt="фото мастера">
+          <h4 class="cards__item-title">Екатерина</h4>
+          <ul class="cards__item-list">
+            <li class="cards__item-list-el">мастер маникюра</li>
+            <li class="cards__item-list-el">cтаж работы 3 года</li>
+          </ul>
+        </div>
+        <div class="cards__item">
+          <img class="cards__item-img" src="./images/team/master.jpg" alt="фомо мастера">
+          <h4 class="cards__item-title">Бровистка</h4>
+          <ul class="cards__item-list">
+            <li class="cards__item-list-el">мастер-бровист</li>
+            <li class="cards__item-list-el">cтаж работы 3 года</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

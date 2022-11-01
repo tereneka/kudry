@@ -1,0 +1,12 @@
+.cards__wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.cards__wrapper::-webkit-scrollbar {
+  display: none;
+}

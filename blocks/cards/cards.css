@@ -1,0 +1,4 @@
+.cards {
+  position: relative;
+  overflow-x: auto;
+}
