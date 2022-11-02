@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;700&display=swap");
 @import url(../vendor/variables.css);
 
 @import url(../blocks/root/root.css);
@@ -16,15 +13,14 @@
 @import url(../blocks/header/header__logo.css);
 @import url(../blocks/header/header__links.css);
 @import url(../blocks/header/header__link.css);
-@import url(../blocks/header/header__text.css);
 
 @import url(../blocks/section-title/section-title.css);
 
 @import url(../blocks/price/price.css);
 @import url(../blocks/price/price__table.css);
 @import url(../blocks/price/price__table-caption.css);
-@import url(../blocks/price/__cell/price__cell.css);
-@import url(../blocks/price/__cell/price__cell_underlined.css);
+@import url(../blocks/price/price__cell.css);
+@import url(../blocks/price/price__underline.css);
 
 @import url(../blocks/photo/photo.css);
 @import url(../blocks/photo/photo__grid.css);
