@@ -2,7 +2,6 @@
 @import url(../vendor/variables.css);
 
 @import url(../blocks/root/root.css);
-@import url(../blocks/root/root__separator.css);
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/logo__subtitle.css);
@@ -19,7 +18,12 @@
 @import url(../blocks/section-title/section-title.css);
 
 @import url(../blocks/price/price.css);
-@import url(../blocks/price/price__table.css);
+@import url(../blocks/price/__toggle-btn/price__toggle-btn.css);
+@import url(../blocks/price/__toggle-btn/_state/price__toggle-btn_state_opened.css);
+@import url(../blocks/price/__toggle-btn/_state/price__toggle-btn_state_closed.css);
+@import url(../blocks/price/__table/price__table.css);
+@import url(../blocks/price/__table/price__table_opened.css);
+@import url(../blocks/price/price__table-caption-container.css);
 @import url(../blocks/price/price__table-caption.css);
 @import url(../blocks/price/price__cell.css);
 @import url(../blocks/price/price__underline.css);

@@ -33,13 +33,15 @@
     </nav>
   </header>
 
-
-
   <main>
     <section class="price" id="price">
       <h3 class="section-title">ц<br>е<br>н<br>ы</h3>
+      <div class="price__table-caption-container">
+        <h4 class="price__table-caption">Парикмахерские услуги</h4>
+        <button class="price__toggle-btn price__toggle-btn_state_closed" type="button"
+          aria-label="открытие и закрытие прайса"></button>
+      </div>
       <table class="price__table">
-        <caption class="price__table-caption">Парикмахерские услуги</caption>
         <tbody>
           <tr>
             <td class="price__cell">Стрижка женская</td>
@@ -117,12 +119,16 @@
             <td class="price__cell">Кератиновое выпрямление</td>
             <td class="price__cell">4000/5000</td>
           </tr>
-
         </tbody>
       </table>
 
+      <div class="price__table-caption-container">
+        <h4 class="price__table-caption">Маникюр</h4>
+        <button class="price__toggle-btn price__toggle-btn_state_closed" type="button"
+          aria-label="открытие и закрытие прайса"></button>
+      </div>
       <table class="price__table">
-        <caption class="price__table-caption">Маникюр</caption>
+        <!-- <caption class="price__table-caption">Маникюр</caption> -->
         <tbody>
           <tr>
             <td class="price__cell">Женский</td>
@@ -167,8 +173,13 @@
         </tbody>
       </table>
 
+      <div class="price__table-caption-container">
+        <h4 class="price__table-caption">Педикюр</h4>
+        <button class="price__toggle-btn price__toggle-btn_state_closed" type="button"
+          aria-label="открытие и закрытие прайса"></button>
+      </div>
       <table class="price__table">
-        <caption class="price__table-caption">Педикюр</caption>
+        <!-- <caption class="price__table-caption">Педикюр</caption> -->
         <tbody>
           <tr>
             <td class="price__cell">Аппаратный педикюр</td>
@@ -193,8 +204,13 @@
         </tbody>
       </table>
 
+      <div class="price__table-caption-container">
+        <h4 class="price__table-caption">Брови и ресницы</h4>
+        <button class="price__toggle-btn price__toggle-btn_state_closed" type="button"
+          aria-label="открытие и закрытие прайса"></button>
+      </div>
       <table class="price__table">
-        <caption class="price__table-caption">Брови и ресницы</caption>
+        <!-- <caption class="price__table-caption">Брови и ресницы</caption> -->
         <tbody>
           <tr>
             <td class="price__cell">Коррекция формы</td>
@@ -320,6 +336,7 @@
       понедельник&mdash;воскресенье<br>11:00.............21:00
     </p>
   </footer>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
