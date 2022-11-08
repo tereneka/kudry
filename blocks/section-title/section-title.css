@@ -10,6 +10,7 @@
   top: 15px;
   max-height: 100px;
   overflow-y: visible;
+  margin: 20px 0;
 }
 
 @media screen and (min-width: 700px) {

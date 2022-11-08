@@ -2,10 +2,14 @@
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 2;
 }
 
-.price__cell:nth-of-type(2n) {
+.price__cell:first-of-type {
+  padding-right: 20px;
+}
+
+.price__cell:last-of-type {
   text-align: end;
   white-space: nowrap;
 }
