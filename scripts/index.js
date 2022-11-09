@@ -22,23 +22,35 @@ let popup = document.querySelector(".popup");
 let photoFull = popup.querySelector(".popup__photo");
 let popupCloseBtn = popup.querySelector(".popup__close-btn");
 
-photoWorks.forEach((photo, index) => {
+photoWorks.forEach((photo) => {
   photo.addEventListener("click", () => {
-    console.log(photo.src);
     photoFull.src = photo.src;
     photoFull.alt = photo.alt;
     popup.classList.add("popup_opened");
+    photoFull.classList.add("popup__photo_opened");
+  });
+});
+
+photoInterior.forEach((photo) => {
+  photo.addEventListener("click", () => {
+    photoFull.src = photo.src;
+    photoFull.alt = photo.alt;
+    popup.classList.add("popup_opened");
+    photoFull.classList.add("popup__photo_opened");
   });
 });
 
 function closePopup() {
-  popup.classList.remove("popup_opened");
+  photoFull.classList.remove("popup__photo_opened");
+  setTimeout(() => {
+    popup.classList.remove("popup_opened", "pop");
+  }, 500);
 }
 
 popup.addEventListener("click", closePopup);
 
 popupCloseBtn.addEventListener("click", closePopup);
 
-photoFull.addEventListener("click", () => {
-  event.stopPropagation();
+photoFull.addEventListener("click", (evt) => {
+  evt.stopPropagation();
 });
