@@ -43,6 +43,7 @@
 @import url(../blocks/footer/footer__contacts.css);
 @import url(../blocks/footer/footer__contacts-link.css);
 @import url(../blocks/footer/footer__time.css);
+@import url(../blocks/footer/footer__copyright.css);
 
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/popup_opened.css);

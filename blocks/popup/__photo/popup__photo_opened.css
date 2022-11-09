@@ -1,4 +1,4 @@
-@keyframes open {
+@keyframes openPhoto {
   from {
     display: none;
     scale: 0;
@@ -15,5 +15,5 @@
 
 .popup__photo_opened {
   scale: 1;
-  animation: open 0.5s ease-in-out 1;
+  animation: openPhoto 0.5s ease-in-out 1;
 }

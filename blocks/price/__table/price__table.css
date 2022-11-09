@@ -1,7 +1,10 @@
 .price__table {
-  display: none;
+  display: block;
+  height: 0;
+  overflow: hidden;
   width: 80%;
   margin: 0 auto;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {

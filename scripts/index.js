@@ -6,9 +6,7 @@ priceToggleBtns.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("price__toggle-btn_state_closed");
     btn.classList.toggle("price__toggle-btn_state_opened");
-    setTimeout(() => {
-      priceTables[index].classList.toggle("price__table_opened");
-    }, 400);
+    priceTables[index].classList.toggle("price__table_opened");
   });
 });
 

@@ -9,6 +9,8 @@
   transition: all 0.3s;
 }
 
-.price__toggle-btn:hover {
-  opacity: 0.5;
+@media screen and (min-width: 900px) {
+  .price__toggle-btn:hover {
+    opacity: 0.5;
+  }
 }
