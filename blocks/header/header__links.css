@@ -13,6 +13,9 @@
   scrollbar-width: none;
 }
 
+.header__links:hover {
+}
+
 .header__links::-webkit-scrollbar {
   display: none;
 }

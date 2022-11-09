@@ -1,3 +1,12 @@
+@keyframes moveBackForth {
+  from {
+    transform: initial;
+  }
+  to {
+    transform: translateX(-100%) rotateZ(-360deg);
+  }
+}
+
 .header__link {
   color: var(--main-text);
   font-size: 16px;
@@ -13,6 +22,7 @@
   padding-top: calc(50% - 10px);
   box-sizing: border-box;
   transition: all 0.4s ease-in-out;
+  animation: moveBackForth 1s ease-in-out 2 alternate;
 }
 
 li:nth-of-type(2n + 1) .header__link {
