@@ -1,3 +1,4 @@
+// аккордион для прайса
 let price = document.querySelector(".price");
 let priceToggleBtns = price.querySelectorAll(".price__toggle-btn");
 let priceTables = price.querySelectorAll(".price__table");
@@ -6,10 +7,20 @@ priceToggleBtns.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("price__toggle-btn_state_closed");
     btn.classList.toggle("price__toggle-btn_state_opened");
-    priceTables[index].classList.toggle("price__table_opened");
+    if (priceTables[index].hasAttribute("style")) {
+      priceTables[index].removeAttribute("style");
+    } else {
+      priceTables[index].setAttribute(
+        "style",
+        `height: ${priceTables[index].scrollHeight}px;
+      transition: all 0.5s ease-in-out;
+      `
+      );
+    }
   });
 });
 
+// fullscreen для фотографий
 let photoWorks = document
   .querySelector(".photo__grid_type_works")
   .querySelectorAll(".photo__item");
