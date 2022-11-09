@@ -1,28 +1,19 @@
-@keyframes moveBackForth {
-  from {
-    transform: initial;
-  }
-  to {
-    transform: translateX(-100%) rotateZ(-360deg);
-  }
-}
-
 .header__link {
   color: var(--main-text);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 800;
   font-style: normal;
   text-decoration: none;
   background-position: center;
+  background-size: cover;
   border-radius: 50%;
   display: inline-block;
-  min-width: 80px;
-  min-height: 80px;
+  width: calc(20vw - 3px);
+  height: calc(20vw - 3px);
   text-align: center;
-  padding-top: calc(50% - 10px);
+  padding-top: calc(50% - 9px);
   box-sizing: border-box;
   transition: all 0.4s ease-in-out;
-  animation: moveBackForth 1s ease-in-out 2 alternate;
 }
 
 li:nth-of-type(2n + 1) .header__link {
@@ -31,6 +22,21 @@ li:nth-of-type(2n + 1) .header__link {
 
 li:nth-of-type(2n) .header__link {
   background-image: url(../../images/background/back-pink.png);
+}
+
+@media screen and (min-width: 375px) {
+  .header__link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .header__link {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    padding-top: calc(50% - 12px);
+  }
 }
 
 @media screen and (min-width: 900px) {

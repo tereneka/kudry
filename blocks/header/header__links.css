@@ -1,19 +1,17 @@
 .header__links {
   margin: 15px auto 0;
-  padding: 0 15px;
+  padding-left: 0;
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-around;
+  gap: 2px;
   position: relative;
   z-index: 1;
   overflow-x: auto;
   min-height: 100px;
   scroll-behavior: smooth;
   scrollbar-width: none;
-}
-
-.header__links:hover {
 }
 
 .header__links::-webkit-scrollbar {
