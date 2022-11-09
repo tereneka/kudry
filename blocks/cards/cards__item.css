@@ -4,7 +4,13 @@
   border-radius: 16px;
   background-size: cover;
   padding: 16px;
+  margin-right: -10px;
   box-sizing: border-box;
+  box-shadow: -10px 0 10px var(--main-text);
+}
+
+.cards__item:first-of-type {
+  box-shadow: none;
 }
 
 .cards__item:nth-of-type(2n + 1) {
@@ -13,4 +19,10 @@
 
 .cards__item:nth-of-type(2n) {
   background-image: url(../../images/background/back-pink-l.jpg);
+}
+
+@media screen and (min-width: 960px) {
+  .cards__item {
+    margin-right: 0;
+  }
 }

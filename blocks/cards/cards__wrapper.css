@@ -1,8 +1,7 @@
 .cards__wrapper {
-  width: 80%;
-  margin: auto;
+  width: 89%;
+  margin-left: 10%;
   display: flex;
-  gap: 8px;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -11,8 +10,10 @@
   display: none;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
   .cards__wrapper {
+    width: 80%;
+    margin: auto;
     gap: 16px;
   }
 }
