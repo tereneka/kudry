@@ -28,6 +28,7 @@ let photoInterior = document
   .querySelector(".photo__grid_type_interior")
   .querySelectorAll(".photo__item");
 let popup = document.querySelector(".popup");
+let popupContainer = popup.querySelector(".popup__container");
 let photoFull = popup.querySelector(".popup__photo");
 let popupCloseBtn = popup.querySelector(".popup__close-btn");
 
@@ -36,7 +37,7 @@ photoWorks.forEach((photo) => {
     photoFull.src = photo.src;
     photoFull.alt = photo.alt;
     popup.classList.add("popup_opened");
-    photoFull.classList.add("popup__photo_opened");
+    popupContainer.classList.add("popup__container_opened");
   });
 });
 
@@ -45,14 +46,14 @@ photoInterior.forEach((photo) => {
     photoFull.src = photo.src;
     photoFull.alt = photo.alt;
     popup.classList.add("popup_opened");
-    photoFull.classList.add("popup__photo_opened");
+    popupContainer.classList.add("popup__container_opened");
   });
 });
 
 function closePopup() {
-  photoFull.classList.remove("popup__photo_opened");
+  popupContainer.classList.remove("popup__container_opened");
   setTimeout(() => {
-    popup.classList.remove("popup_opened", "pop");
+    popup.classList.remove("popup_opened");
   }, 500);
 }
 
