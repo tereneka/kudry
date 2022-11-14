@@ -73,7 +73,8 @@ const mediaQueryWidth =
   (cardsItemElements.length * cardsItemElements[0].clientWidth) / 0.8;
 const mediaQueryList = window.matchMedia(`(min-width: ${mediaQueryWidth}px)`);
 
-mediaQueryList.addEventListener("change", () => {
+function cangeScreen() {
+  console.log("screen");
   if (mediaQueryList.matches && mediaQueryWidth <= 1440) {
     cardsWrapperElement.classList.add("cards__wrapper_fullwidth");
     cardsItemElements.forEach((item) => {
@@ -85,4 +86,6 @@ mediaQueryList.addEventListener("change", () => {
       item.classList.remove("cards__item_fullwidth");
     });
   }
-});
+}
+window.addEventListener("load", cangeScreen);
+mediaQueryList.addEventListener("change", cangeScreen);
