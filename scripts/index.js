@@ -1,18 +1,19 @@
 // аккордион для прайса
-let price = document.querySelector(".price");
-let priceToggleBtns = price.querySelectorAll(".price__toggle-btn");
-let priceTables = price.querySelectorAll(".price__table");
+let priceElement = document.querySelector(".price");
+let priceToggleBtnElements =
+  priceElement.querySelectorAll(".price__toggle-btn");
+let priceTableElements = priceElement.querySelectorAll(".price__table");
 
-priceToggleBtns.forEach((btn, index) => {
+priceToggleBtnElements.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("price__toggle-btn_state_closed");
     btn.classList.toggle("price__toggle-btn_state_opened");
-    if (priceTables[index].hasAttribute("style")) {
-      priceTables[index].removeAttribute("style");
+    if (priceTableElements[index].hasAttribute("style")) {
+      priceTableElements[index].removeAttribute("style");
     } else {
-      priceTables[index].setAttribute(
+      priceTableElements[index].setAttribute(
         "style",
-        `height: ${priceTables[index].scrollHeight}px;
+        `height: ${priceTableElements[index].scrollHeight}px;
       transition: all 0.5s ease-in-out;
       `
       );
@@ -21,46 +22,67 @@ priceToggleBtns.forEach((btn, index) => {
 });
 
 // fullscreen для фотографий
-let photoWorks = document
+let photoWorkElements = document
   .querySelector(".photo__grid_type_works")
   .querySelectorAll(".photo__item");
-let photoInterior = document
+let photoInteriorElements = document
   .querySelector(".photo__grid_type_interior")
   .querySelectorAll(".photo__item");
-let popup = document.querySelector(".popup");
-let popupContainer = popup.querySelector(".popup__container");
-let photoFull = popup.querySelector(".popup__photo");
-let popupCloseBtn = popup.querySelector(".popup__close-btn");
+let popupElement = document.querySelector(".popup");
+let popupContainerElement = popupElement.querySelector(".popup__container");
+let photoFullElement = popupElement.querySelector(".popup__photo");
+let popupCloseBtnElement = popupElement.querySelector(".popup__close-btn");
 
-photoWorks.forEach((photo) => {
+photoWorkElements.forEach((photo) => {
   photo.addEventListener("click", () => {
-    photoFull.src = photo.src;
-    photoFull.alt = photo.alt;
-    popup.classList.add("popup_opened");
-    popupContainer.classList.add("popup__container_opened");
+    photoFullElement.src = photo.src;
+    photoFullElement.alt = photo.alt;
+    popupElement.classList.add("popup_opened");
+    popupContainerElement.classList.add("popup__container_opened");
   });
 });
 
-photoInterior.forEach((photo) => {
+photoInteriorElements.forEach((photo) => {
   photo.addEventListener("click", () => {
-    photoFull.src = photo.src;
-    photoFull.alt = photo.alt;
-    popup.classList.add("popup_opened");
-    popupContainer.classList.add("popup__container_opened");
+    photoFullElement.src = photo.src;
+    photoFullElement.alt = photo.alt;
+    popupElement.classList.add("popup_opened");
+    popupContainerElement.classList.add("popup__container_opened");
   });
 });
 
 function closePopup() {
-  popupContainer.classList.remove("popup__container_opened");
+  popupContainerElement.classList.remove("popup__container_opened");
   setTimeout(() => {
-    popup.classList.remove("popup_opened");
+    popupElement.classList.remove("popup_opened");
   }, 500);
 }
 
-popup.addEventListener("click", closePopup);
+popupElement.addEventListener("click", closePopup);
 
-popupCloseBtn.addEventListener("click", closePopup);
+popupCloseBtnElement.addEventListener("click", closePopup);
 
-photoFull.addEventListener("click", (evt) => {
+photoFullElement.addEventListener("click", (evt) => {
   evt.stopPropagation();
+});
+
+// управление шириной блока команды
+const cardsWrapperElement = document.querySelector(".cards__wrapper");
+const cardsItemElements = cardsWrapperElement.querySelectorAll(".cards__item");
+const mediaQueryWidth =
+  (cardsItemElements.length * cardsItemElements[0].clientWidth) / 0.8;
+const mediaQueryList = window.matchMedia(`(min-width: ${mediaQueryWidth}px)`);
+
+mediaQueryList.addEventListener("change", () => {
+  if (mediaQueryList.matches && mediaQueryWidth <= 1440) {
+    cardsWrapperElement.classList.add("cards__wrapper_fullwidth");
+    cardsItemElements.forEach((item) => {
+      item.classList.add("cards__item_fullwidth");
+    });
+  } else {
+    cardsWrapperElement.classList.remove("cards__wrapper_fullwidth");
+    cardsItemElements.forEach((item) => {
+      item.classList.remove("cards__item_fullwidth");
+    });
+  }
 });

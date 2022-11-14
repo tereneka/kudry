@@ -1,5 +1,5 @@
 .cards__item {
-  width: 25%;
+  width: 200px;
   min-width: 200px;
   border-radius: 16px;
   background-size: cover;
@@ -14,16 +14,9 @@
 }
 
 .cards__item:nth-of-type(2n + 1) {
-  background-image: url(../../images/background/back-green-l.jpg);
+  background-image: url(../../../images/background/back-green-l.jpg);
 }
 
 .cards__item:nth-of-type(2n) {
-  background-image: url(../../images/background/back-pink-l.jpg);
-}
-
-@media screen and (min-width: 960px) {
-  .cards__item {
-    margin-right: 0;
-    box-shadow: none;
-  }
+  background-image: url(../../../images/background/back-pink-l.jpg);
 }
