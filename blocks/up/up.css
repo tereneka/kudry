@@ -23,3 +23,9 @@
     right: 20px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .up {
+    right: calc((100% - 1400px) / 2);
+  }
+}

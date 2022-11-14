@@ -9,11 +9,3 @@
 .cards__wrapper::-webkit-scrollbar {
   display: none;
 }
-
-@media screen and (min-width: 960px) {
-  .cards__wrapper {
-    width: 80%;
-    margin: auto;
-    gap: 16px;
-  }
-}
