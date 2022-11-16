@@ -74,7 +74,6 @@ const mediaQueryWidth =
 const mediaQueryList = window.matchMedia(`(min-width: ${mediaQueryWidth}px)`);
 
 function cangeScreen() {
-  console.log("screen");
   if (mediaQueryList.matches && mediaQueryWidth <= 1440) {
     cardsWrapperElement.classList.add("cards__wrapper_fullwidth");
     cardsItemElements.forEach((item) => {
