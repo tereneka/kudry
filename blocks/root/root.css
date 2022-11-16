@@ -1,6 +1,5 @@
 .root {
   font-family: "Source Code Pro", monospace;
-  max-width: 1440px;
   background-color: var(--main-back);
   color: var(--main-text);
   box-sizing: border-box;

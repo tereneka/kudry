@@ -24,8 +24,8 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .up {
-    right: calc((100% - 1400px) / 2);
+    right: calc((100% - 1240px) / 2);
   }
 }
