@@ -10,7 +10,6 @@
   z-index: 1;
   overflow-x: auto;
   min-height: 100px;
-  scroll-behavior: smooth;
   scrollbar-width: none;
   max-width: 1280px;
 }
