@@ -6,15 +6,13 @@ let priceTableElements = priceElement.querySelectorAll(".price__table");
 
 priceToggleBtnElements.forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    btn.classList.toggle("price__toggle-btn_state_closed");
-    btn.classList.toggle("price__toggle-btn_state_opened");
+    btn.classList.toggle("price__toggle-btn_opened");
     if (priceTableElements[index].hasAttribute("style")) {
       priceTableElements[index].removeAttribute("style");
     } else {
       priceTableElements[index].setAttribute(
         "style",
         `height: ${priceTableElements[index].scrollHeight}px;
-      transition: all 0.5s ease-in-out;
       `
       );
     }
