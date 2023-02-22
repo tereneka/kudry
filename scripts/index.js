@@ -1,8 +1,8 @@
 // аккордион для прайса
-let priceElement = document.querySelector(".price");
-let priceToggleBtnElements =
+const priceElement = document.querySelector(".price");
+const priceToggleBtnElements =
   priceElement.querySelectorAll(".price__toggle-btn");
-let priceTableElements = priceElement.querySelectorAll(".price__table");
+const priceTableElements = priceElement.querySelectorAll(".price__table");
 
 priceToggleBtnElements.forEach((btn, index) => {
   btn.addEventListener("click", () => {
@@ -20,21 +20,21 @@ priceToggleBtnElements.forEach((btn, index) => {
 });
 
 // fullscreen для фотографий
-let photoWorkElements = document
+const photoWorkElements = document
   .querySelector(".photo__grid_type_works")
   .querySelectorAll(".photo__item");
-let photoInteriorElements = document
+const photoInteriorElements = document
   .querySelector(".photo__grid_type_interior")
   .querySelectorAll(".photo__item");
-let popupElement = document.querySelector(".popup");
-let popupContainerElement = popupElement.querySelector(".popup__container");
-let photoFullElement = popupElement.querySelector(".popup__photo");
-let popupCloseBtnElement = popupElement.querySelector(".popup__close-btn");
+const popupElement = document.querySelector(".popup");
+const popupContainerElement = popupElement.querySelector(".popup__container");
+const popupPhotoElement = popupElement.querySelector(".popup__photo");
+const popupCloseBtnElement = popupElement.querySelector(".popup__close-btn");
 
 photoWorkElements.forEach((photo) => {
   photo.addEventListener("click", () => {
-    photoFullElement.src = photo.src;
-    photoFullElement.alt = photo.alt;
+    popupPhotoElement.src = photo.src;
+    popupPhotoElement.alt = photo.alt;
     popupElement.classList.add("popup_opened");
     popupContainerElement.classList.add("popup__container_opened");
   });
@@ -42,27 +42,23 @@ photoWorkElements.forEach((photo) => {
 
 photoInteriorElements.forEach((photo) => {
   photo.addEventListener("click", () => {
-    photoFullElement.src = photo.src;
-    photoFullElement.alt = photo.alt;
+    popupPhotoElement.src = photo.src;
+    popupPhotoElement.alt = photo.alt;
     popupElement.classList.add("popup_opened");
     popupContainerElement.classList.add("popup__container_opened");
   });
 });
 
-function closePopup() {
-  popupContainerElement.classList.remove("popup__container_opened");
-  setTimeout(() => {
-    popupElement.classList.remove("popup_opened");
-  }, 500);
+function closePopup(e) {
+  if (e.target !== popupPhotoElement) {
+    popupContainerElement.classList.remove("popup__container_opened");
+    setTimeout(() => {
+      popupElement.classList.remove("popup_opened");
+    }, 500);
+  }
 }
 
 popupElement.addEventListener("click", closePopup);
-
-popupCloseBtnElement.addEventListener("click", closePopup);
-
-photoFullElement.addEventListener("click", (evt) => {
-  evt.stopPropagation();
-});
 
 // управление шириной блока команды
 const cardsWrapperElement = document.querySelector(".cards__wrapper");
